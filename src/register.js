@@ -5,7 +5,7 @@ const surname = document.getElementById('surname');
 const homeBtn = document.getElementById('homepage');
 
 homeBtn.addEventListener('click', () => {
-location.href = 'index.html';
+    location.href = 'index.html';
 });
 
 password.addEventListener('input', () => {

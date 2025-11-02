@@ -200,7 +200,7 @@ select {
 }
 
 /* back to top arrow */
-.back-to-top {
+#back-to-top {
   position: fixed;
   bottom: 24px;
   right: 24px;
@@ -212,7 +212,7 @@ select {
   fill: var(--primary-color);
 }
 
-.back-to-top.show {
+#back-to-top.show {
   display: block;
 }
 
@@ -250,7 +250,7 @@ select {
   gap: 24px;
 }
 
-.homepage-btn {
+#homepage-btn {
   margin-top: 36px;
 }
 

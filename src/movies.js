@@ -3,7 +3,7 @@ const selectMovie = document.getElementById('movie-select');
 const homeBtn = document.getElementById('homepage-btn');
 
 homeBtn.addEventListener('click', () => {
-location.href = '/index.html';
+    location.href = '/index.html';
 });
 
 /**
