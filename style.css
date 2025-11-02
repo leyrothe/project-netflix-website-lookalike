@@ -278,7 +278,7 @@ select {
 }
 
 @media (min-width: 715px) {
-  /* rules for displays that are above 715px  */
+  /* rules for displays that are above 715px */
   .start-form {
     flex-direction: row;
     gap: 16px;
