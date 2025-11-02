@@ -2,14 +2,19 @@ const password = document.getElementById('password');
 const passwordAgain = document.getElementById('password-again');
 const registerName = document.getElementById('name');
 const surname = document.getElementById('surname');
+const homeBtn = document.getElementById('homepage');
+
+homeBtn.addEventListener('click', () => {
+location.href = 'index.html';
+});
 
 password.addEventListener('input', () => {
     comparePasswords();
-})
+});
 
 passwordAgain.addEventListener('input', () => {
     comparePasswords();
-})
+});
 
 /**
  * Check if passwords match and add style class accordingly
@@ -36,11 +41,11 @@ const comparePasswords = () => {
 
 registerName.addEventListener('input', () => {
     checkString(registerName);
-})
+});
 
 surname.addEventListener('input', () => {
     checkString(surname);
-})
+});
 
 /**
  * Validates string (first name or last name).

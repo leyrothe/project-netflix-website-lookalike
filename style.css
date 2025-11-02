@@ -125,7 +125,7 @@ footer {
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 16px 24px 42px 24px;
 }
 
 .footer-link {
