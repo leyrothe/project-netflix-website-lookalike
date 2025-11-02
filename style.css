@@ -156,6 +156,10 @@ button:hover {
   background: rgb(193, 17, 25);
 }
 
+p {
+  color: var(--white-color);
+}
+
 .title {
   font-size: var(--h1-size-mobile);
   color: var(--white-color);
