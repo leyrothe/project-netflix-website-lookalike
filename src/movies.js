@@ -20,6 +20,10 @@ const getMovie = async(url) => {
     });
 }
 
+/**
+ * Creates movie element with image
+ * @param movieElement contains data from fetch
+ */
 const createMovie = (movieElement) => {
   const image = movieElement.show.image?.original;
   const movieName = movieElement.show.name;
