@@ -3,7 +3,7 @@ const selectMovie = document.getElementById('movie-select');
 const homeBtn = document.getElementById('homepage-btn');
 
 homeBtn.addEventListener('click', () => {
-    location.href = '/index.html';
+    location.href = './index.html';
 });
 
 /**
@@ -17,12 +17,19 @@ selectMovie.addEventListener('change', (event) => {
 });
 
 const getMovie = async(url) => {
-    const result = await fetch(url);
-    const data = await result.json();
-
-    data.forEach(movieElement => {
+    try {
+        const result = await fetch(url);
+        if (!result.ok) {
+            throw new Error(`HTTP error! Status: ${result.status}`);
+        }
+        const data = await result.json();
+        data.forEach(movieElement => {
         createMovie(movieElement);
     });
+    } catch (error) {
+        console.error('Error fetching movies:', error);
+        moviesArea.innerHTML = '<p>Chyba při načítání filmů</p>';
+    }
 }
 
 /**
